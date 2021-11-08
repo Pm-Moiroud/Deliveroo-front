@@ -1,1 +1,48 @@
 /* Other rules */
+
+.logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #00cdbd;
+  border-bottom: 1px solid #e9ebeb;
+  box-sizing: border-box;
+}
+
+i {
+  height: 20px;
+}
+
+.name {
+  margin-left: 5px;
+}
+
+.container {
+  /* Et on centre */
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.deliveroo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #cacaca;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+.block {
+  display: flex;
+}
+
+.block p {
+}
+.header-picture {
+  height: 30vh;
+}
