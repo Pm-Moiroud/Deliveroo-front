@@ -1,18 +1,21 @@
 import { SiDeliveroo } from "react-icons/si";
-import Restaurant from "./Restaurant";
 
 const Header = ({ name, description, picture }) => {
   console.log(description);
   return (
-    <header>
-      <div className="deliveroo container ">
-        <SiDeliveroo size={45} style={{ color: "#00cdbd" }} />{" "}
-        <span className="name">deliveroo</span>
-      </div>
-      <div className="container">
-        <h1>{name}</h1>
-        <p>{description}</p>
-        <img className="header-picture" src={picture} alt={name} />
+    <header className="container headers">
+      <div className="margin">
+        <div className="header-logo">
+          <SiDeliveroo size={45} style={{ color: "#00cdbd" }} />
+          <span className="logo-text">deliveroo</span>
+        </div>
+        <div className="header-nav">
+          <div>
+            <h1>{name}</h1>
+            <p className="introducing">{description}</p>
+          </div>
+          <img className="header-picture" src={picture} alt={name} />
+        </div>
       </div>
     </header>
   );
