@@ -28,7 +28,7 @@ const Meal = ({
     >
       <section onClick={(event) => {}} className="flex-section">
         <div className="meal-description">
-          <h3 className>{title}</h3>
+          <h3>{title}</h3>
           <p className="meal-p">{description}</p>
           <span>{price} €</span>
         </div>

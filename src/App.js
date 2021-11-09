@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Basket from "./components/Basket";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState({});
@@ -12,14 +14,9 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        console.log("fetchData");
-        const response = await axios.get("https://deliveroo-db.herokuapp.com/");
-        setData(response.data);
-        setIsLoading(false);
-      } catch (error) {
-        console.log(error.message);
-      }
+      const response = await axios.get("https://deliveroo-db.herokuapp.com/");
+      setData(response.data);
+      setIsLoading(false);
     };
     fetchData();
   }, []);
@@ -58,6 +55,7 @@ function App() {
           <Basket basket={basket} setBasket={setBasket} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -10,6 +10,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   background-color: #f3f5f5;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -32,13 +33,12 @@ h3 {
   padding-bottom: 20px;
 }
 
+/* Modification du Header */
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
-
-/* Modification du Header */
-
 .margin {
   padding: 10px;
 }
@@ -74,7 +74,7 @@ h3 {
 }
 
 .header-picture {
-  width: 350px;
+  width: 360px;
   margin-bottom: 20x;
   margin-left: 30px;
 }
@@ -131,13 +131,6 @@ h3 {
 .meal-content {
   display: flex;
   flex-wrap: wrap;
-  width: 56vw;
-}
-
-.col1-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Modification du Basket */
@@ -147,23 +140,37 @@ h3 {
 
 .flex {
   display: flex;
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
 }
 
-.basket-container {
-  width: 325px;
-  background-color: white;
+.empty-basket {
+  text-align: center;
+  margin-top: 15px;
+  color: grey;
 }
 
-.quantity {
-  margin: 0 5px;
+.basket-container {
+  width: 310px;
+  min-height: 150px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(192, 192, 192, 0.2);
+}
+
+.justify {
+  width: 20%;
+}
+
+.title {
+  text-align: center;
+  width: 60%;
 }
 
 .button-basket {
   background-color: #00cdbd;
   color: white;
-  width: 325px;
+  font-size: 20px;
+  width: 310px;
   height: 50px;
   border-radius: 3px;
   border: none;
@@ -172,12 +179,10 @@ h3 {
 .counter {
   display: flex;
   justify-content: space-between;
-
   padding-top: 21px;
   padding-bottom: 21px;
   border-bottom: 1px solid grey;
   border-radius: 0;
-  text-align: left;
 }
 
 .minus,
@@ -207,4 +212,25 @@ h3 {
   font-weight: bold;
   margin-top: 10px;
   padding: 10px 0;
+}
+
+/* modifications du footer */
+.footer .span-bold {
+  font-weight: bold;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #d1cfd1 1%,
+    #eeeeee 100%
+  );
 }

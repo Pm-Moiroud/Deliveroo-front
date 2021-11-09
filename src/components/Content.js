@@ -1,9 +1,8 @@
 import Meal from "./Meal";
-import Basket from "./Basket";
 
 const Content = ({ name, meals, basket, setBasket }) => {
   return (
-    <body className="">
+    <main>
       <section className="main-content">
         <div className="categories">
           <h2>{name}</h2>
@@ -29,7 +28,7 @@ const Content = ({ name, meals, basket, setBasket }) => {
           })}
         </div>
       </section>
-    </body>
+    </main>
   );
 };
 

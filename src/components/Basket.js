@@ -6,7 +6,9 @@ const Basket = ({ basket, setBasket }) => {
   return (
     <div className="basket-container">
       <button className="button-basket">Valider mon panier</button>
-      {basket.length === 0 && <p>Votre panier est vide</p>}
+      {basket.length === 0 && (
+        <p className="empty-basket">Votre panier est vide</p>
+      )}
       {basket.length > 0 && (
         <div>
           <Items setBasket={setBasket} basket={basket} />

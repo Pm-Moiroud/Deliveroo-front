@@ -1,7 +1,6 @@
 import { SiDeliveroo } from "react-icons/si";
 
 const Header = ({ name, description, picture }) => {
-  console.log(description);
   return (
     <header className="container headers">
       <div className="margin">

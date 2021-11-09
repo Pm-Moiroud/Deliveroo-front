@@ -1,16 +1,15 @@
 import { AiFillPlusCircle } from "react-icons/ai";
 import { AiFillMinusCircle } from "react-icons/ai";
-import { SiBlueprint } from "react-icons/si";
 
 const Line = ({ basket, setBasket }) => {
   return (
     <>
       {basket.map((item, index) => {
         return (
-          <div key={item.id} className="cart-content">
+          <div key={item.id}>
             <div className="line">
               <div className="counter">
-                <div>
+                <div className="justify">
                   <AiFillMinusCircle
                     size={20}
                     className="minus"
@@ -37,10 +36,10 @@ const Line = ({ basket, setBasket }) => {
                     }}
                   />
                 </div>
-                <p className="item-title">{item.title}</p>
+                <p className="title">{item.title}</p>
 
                 <div>
-                  <p className="item-price">
+                  <p className="price">
                     {(item.price * item.quantity).toFixed(2)} €
                   </p>
                 </div>
